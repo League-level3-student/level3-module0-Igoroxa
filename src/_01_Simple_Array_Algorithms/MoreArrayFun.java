@@ -15,11 +15,13 @@ public static void main(String[] args) {
 	words[2] = "third";
 	words[3] = "fourth";
 	words[4] = "fifth";
-	
-
-
+	print();
+printReverse();
+everyOther();
+random();
 }
-    //2. Write a method that takes an array of Strings and prints all the Strings in the array.
+
+    static //2. Write a method that takes an array of Strings and prints all the Strings in the array.
 void print() {
 	for (int i = 0; i < words.length; i++) {
 		System.out.println(words[i]);
@@ -27,7 +29,7 @@ void print() {
 }
 
 
-    //3. Write a method that takes an array of Strings and prints all the Strings in the array
+    static //3. Write a method that takes an array of Strings and prints all the Strings in the array
     //   in reverse order.
 void printReverse() {
 	for (int i = 4; i < words.length; i--) {
@@ -36,11 +38,11 @@ void printReverse() {
 }
 
 
-    //4. Write a method that takes an array of Strings and prints every other String in the array.
+    static //4. Write a method that takes an array of Strings and prints every other String in the array.
 void everyOther() {
 	for (int i = 0; i < words.length; i++) {
-		boolean check = i % 2;
-		if (i % 2 == true) {
+		int check = i%2;
+		if (i%2 == 0) {
 			System.out.println(words[i]);
 		}
 	}
@@ -48,7 +50,7 @@ void everyOther() {
 
     //5. Write a method that takes an array of Strings and prints all the Strings in the array
     //   in a completely random order. Almost every run of the program should result in a different order.
-void random() {
+static void random() {
 	Random ran = new Random();
 	int[] randoms = new int[5];
 	int ranfinal = ran.nextInt(5);
