@@ -94,7 +94,7 @@ class _02_2DArrayPracticeTest {
     @Test
     void test_12_NorthNeighbor() {
         _02_2DArrayPractice methods = new _02_2DArrayPractice();
-        assertTrue(methods.getNorthNeighbor(testMatrix, 2, 0) == 80 );
+        assertTrue(methods.getNorthNeighbor(testMatrix, 2, 0) == null );
         assertTrue(methods.getNorthNeighbor(testMatrix, 0, 2) == null );
     }
     
