@@ -15,6 +15,8 @@ public class Cell implements Drawable{
         this.x = x;
         this.y = y;
         this.cellSize = size;
+        
+        
     }
 
     /*
@@ -37,7 +39,15 @@ public class Cell implements Drawable{
      */
     public void liveOrDie(int numNeighbors) {
 
-    }
+		if(numNeighbors < 2) {
+			isAlive = false;
+		}
+		if(numNeighbors == 3 && numNeighbors == 2) {
+			isAlive = true;
+		}
+		if (numNeighbors)
+	}
+
 
     public int getX() {
         return x;
